@@ -1,0 +1,98 @@
+.show-view-cart{
+    position: fixed;
+    top: 20px;
+    right: -30%;
+    z-index: 1000;
+    width: 300px;
+    height: 100vh;
+    transition: all 0.3s;
+    background: #ffffff;
+    padding: 20px;
+    .cart-title{
+        padding: 20px;
+        border-bottom:1px solid #EDEDED;
+        h3{
+            color: #1C1C24;
+        }
+        #exit{
+            cursor: pointer;
+            color: #222222;
+            background: #EDEDED;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            align-items: center;
+        }
+    }
+    #delete{
+        cursor: pointer;
+        color: #FF0000;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        align-items: center;
+        &:hover{
+            background: #FF0000;
+            color: #ffffff;
+        }
+    }
+    .none-product{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+    .button-view{
+        display: none;
+        button{
+            cursor: pointer;
+            color: #ffffff;
+            background: #007BFF;
+            margin: 10px;
+            width: 140px;
+            height: 50px;
+            border-radius: 25px;
+            transition: all 0.3s;
+            &:hover{
+                background: #83B735;
+            }
+        }
+    }
+    .total-cart{
+        color: #222222;
+        display: none;
+        span{
+            font-weight: bold;
+        }
+        span.total-cart-price{
+            color: #83B735;
+            font-weight: normal;
+        }
+    }
+    .products-on-cart{
+        img{
+            width: 40%;
+        }
+        .name{
+            span{
+                cursor: pointer;
+                color: #007BFF;
+                font-size: 14px;
+                font-weight: bold;
+                transition: all 0.3s;
+                &:hover{
+                    color: #0056b3;
+                }
+            }
+        }
+        .price-content{
+            span.price{
+                color: #83B735;
+            }
+            span.quantity{
+                color: #222222;
+            }
+        }
+    }
+}
